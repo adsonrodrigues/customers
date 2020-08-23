@@ -1,0 +1,37 @@
+version: '3.7'
+services:
+  service:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000
+    volumes:
+      - .:/opt/app
+    networks:
+      - customers-google-maps
+    depends_on:
+      - postgres
+    stdin_open: true
+    tty: true
+
+  postgres:
+    image: postgres:9.4
+    environment:
+      POSTGRES_PASSWORD: "root1234"
+      POSTGRES_DB: "customers"
+    ports:
+      - 5432:5432
+    volumes:
+      - .:/opt/app
+    working_dir: /opt/app
+    privileged: true
+    networks:
+      - customers-google-maps
+
+networks:
+  customers-google-maps:
+    name: customers-google-maps
+    driver: bridge
+
+
