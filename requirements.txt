@@ -1,5 +1,5 @@
-Django
-django-environ
-psycopg2
-googlemaps
-djangorestframework
+Django==3.1
+django-environ==0.4.*
+psycopg2==2.8.*
+googlemaps==4.4.*
+djangorestframework==3.11.*
