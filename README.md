@@ -67,6 +67,7 @@ ___
 $ docker-compose up -d --build # (only first)
 $ docker-compose exec service python3 manage.py migrate # (only first)
 $ docker-compose exec service python3 manage.py createsuperuser # (only first)
+$ docker-compose exec service python3 manage.py import_customers
 ```
 
 ### Run project
