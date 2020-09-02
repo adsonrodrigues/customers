@@ -22,7 +22,8 @@ ___
 * [Starting](#starting)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
-  * [Configure .env](#Configure-env)
+  * [Google Maps API Key](#google-maps-api-key)
+  * [Configure .env](#configure-env)
   * [Run Project](#run-project)
 * [Contribution](#contribution)
 * [License](#license)
@@ -71,6 +72,12 @@ $ docker-compose exec service python3 manage.py createsuperuser # (only first)
 $ docker-compose exec service python3 manage.py import_customers
 ```
 
+### Google Maps API Key
+___
+_follow the instructions in the documentation below:_
+
+[How to get API Key Google Maps](https://developers.google.com/maps/documentation/geolocation/overview)
+
 ### Configure .env
 ___
 ```sh
@@ -78,7 +85,6 @@ $ docker-compose exec service cp customers/env.template customers/.env
 ```
 
 _Fill in the necessary information from the .env file for example._
-
 
 ### Run project
 ___
