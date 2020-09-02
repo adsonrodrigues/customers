@@ -63,15 +63,6 @@ ___
 
 - [How to install docker compose](https://docs.docker.com/compose/install/)
 
-### Installation
-___
-```sh
-$ docker-compose up -d --build # (only first)
-$ docker-compose exec service python3 manage.py migrate # (only first)
-$ docker-compose exec service python3 manage.py createsuperuser # (only first)
-$ docker-compose exec service python3 manage.py import_customers
-```
-
 ### Google Maps API Key
 ___
 _follow the instructions in the documentation below:_
@@ -85,6 +76,15 @@ $ docker-compose exec service cp customers/env.template customers/.env
 ```
 
 _Fill in the necessary information from the .env file for example._
+
+### Installation
+___
+```sh
+$ docker-compose up -d --build # (only first)
+$ docker-compose exec service python3 manage.py migrate # (only first)
+$ docker-compose exec service python3 manage.py createsuperuser # (only first)
+$ docker-compose exec service python3 manage.py import_customers
+```
 
 ### Run project
 ___
