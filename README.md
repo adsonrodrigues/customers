@@ -22,6 +22,7 @@ ___
 * [Starting](#starting)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
+  * [Configure .env](#Configure-env)
   * [Run Project](#run-project)
 * [Contribution](#contribution)
 * [License](#license)
@@ -46,7 +47,7 @@ ___
 
 ## Starting
 ___
-To be able to use the project follow the steps below.
+_To be able to use the project follow the steps below._
 
 ### Prerequisites
 ___
@@ -76,7 +77,7 @@ ___
 $ docker-compose exec service cp customers/env.template customers/.env.bkp
 ```
 
-Fill in the necessary information from the .env file for example
+_Fill in the necessary information from the .env file for example._
 
 
 ### Run project
