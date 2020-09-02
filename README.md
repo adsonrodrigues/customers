@@ -74,7 +74,7 @@ $ docker-compose exec service python3 manage.py import_customers
 ### Configure .env
 ___
 ```sh
-$ docker-compose exec service cp customers/env.template customers/.env.bkp
+$ docker-compose exec service cp customers/env.template customers/.env
 ```
 
 _Fill in the necessary information from the .env file for example._
