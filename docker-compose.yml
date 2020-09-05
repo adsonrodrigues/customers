@@ -29,6 +29,21 @@ services:
     networks:
       - customers-google-maps
 
+  web:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    image: customers-google-maps
+    working_dir: /opt/app
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/opt/app
+    stdin_open: true
+    tty: true
+    networks:
+        - customers-google-maps
+
 networks:
   customers-google-maps:
     name: customers-google-maps
