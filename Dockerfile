@@ -9,7 +9,7 @@ RUN apt upgrade -y
 
 RUN apt-get update --fix-missing
 
-RUN apt-get install -y python3 python3-pip python3-dev python3-virtualenv python3-setuptools libpq-dev
+RUN apt-get install -y python3 python3-pip python3-dev python3-virtualenv python3-setuptools libpq-dev gdal-bin
 
 RUN pip3 install --upgrade pip
 
